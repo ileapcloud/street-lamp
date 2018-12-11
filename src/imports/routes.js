@@ -1,5 +1,7 @@
 import Vue from 'vue'
 
+import NotFound from './ui/NotFound.vue'
+import Home from './ui/Home.vue'
 import Items from './ui/Items.vue'
 import Notes from './ui/Notes.vue'
 import NotesComponents from './ui/NotesComponents.vue'
@@ -23,4 +25,5 @@ export default [
   { path: '/apollo', name: 'apollo', component: Apollo },
   { path: '/async', name: 'async', component: Async },
   { path: '/about', name: 'about', component: About },
+  { path: '*', name: 'not-found', component: NotFound },
 ]
